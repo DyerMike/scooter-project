@@ -21,5 +21,9 @@ logout(){
   console.log(`user ${this.username} is logged out.`);
 }
 }
+const user = new User("JohnDoe", "password123", 25);
+user.login("password123");
+user.logout();
+
 
 module.exports = User
